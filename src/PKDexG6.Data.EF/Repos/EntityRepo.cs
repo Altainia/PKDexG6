@@ -2,6 +2,7 @@
 using PKDexG6.Domain.Repos;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Data.Entity;
 
 namespace PKDexG6.Data.EF.Repos
 {
@@ -18,7 +19,7 @@ namespace PKDexG6.Data.EF.Repos
 
 		public TEntity FindBy(TPrimaryKey ID)
 		{
-			return m_context.Set<TEntity>().Find(ID);
+			return m_context.Set<TEntity>().Single(x => x.ID.Equals(ID));
 		}
 
 		public void Add(TEntity entity)

@@ -1,21 +1,25 @@
 ﻿{
-  "version": "1.0.0-*",
-  "description": "PKDexG6.Data.EF Class Library",
-  "authors": [ "Altainia" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
-
-  "dependencies": {
-    "System.Collections": "4.0.10-beta-23019",
-    "System.Linq": "4.0.0-beta-23019",
-    "System.Threading": "4.0.10-beta-23019",
-    "System.Runtime": "4.0.10-beta-23019",
+	"authors": [ "Altainia" ],
+	"commands": {
+		"web": "Microsoft.AspNet.Hosting --config hosting.ini",
+		"ef": "EntityFramework.Commands"
+	},
+	"dependencies": {
+		"System.Collections": "4.0.10-beta-23019",
+		"System.Linq": "4.0.0-beta-23019",
+		"System.Threading": "4.0.10-beta-23019",
+		"System.Runtime": "4.0.20-beta-23019",
 		"Microsoft.CSharp": "4.0.0-beta-23019",
+		"EntityFramework.SqlServer": "7.0.0-beta5",
+		"EntityFramework.Commands": "7.0.0-beta5",
 		"PKDexG6.Domain": "1.0.0-*"
-  },
-
-  "frameworks": {
-    "dnxcore50": { }
-  }
+	},
+	"description": "PKDexG6.Data.EF Class Library",
+	"frameworks": {
+		"dnxcore50": { }
+	},
+	"licenseUrl": "",
+	"projectUrl": "",
+	"tags": [ "" ],
+	"version": "1.0.0-*"
 }
