@@ -1,0 +1,61 @@
+﻿#menu-container {
+	background-color: rgba(255,255,255,.50);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 50;
+	top: 2.3em;
+}
+
+	#menu-container.display-none {
+		display: none;
+	}
+
+		#menu-container.display-none #menu {
+			top: -16em;
+		}
+
+	#menu-container.display-show.animate-close {
+		animation: fade-out;
+		animation-duration: 0.2s;
+		animation-delay: 0.2s;
+	}
+
+		#menu-container.display-show.animate-close #menu {
+			animation: scroll-up;
+			animation-duration: 0.4s;
+		}
+
+	#menu-container.display-show {
+		display: flex;
+		animation: fade-in;
+		animation-duration: 0.2s;
+	}
+
+		#menu-container.display-show #menu {
+			animation: scroll-down;
+			animation-duration: 0.4s;
+		}
+
+#menu {
+	background-color: #cdd6ff;
+	border: 1px solid black;
+	width: 80%;
+	max-width: 15em;
+	box-shadow: 0 0 20px black;
+	z-index: 75;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	position: relative;
+}
+
+nav {
+	background-color: #cdd6ff;
+	border-bottom: 1px solid black;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 40px black;
+}

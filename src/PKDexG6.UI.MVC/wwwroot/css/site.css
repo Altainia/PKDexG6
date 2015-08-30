@@ -1,34 +1,146 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/*#region Page Elements*/
+html {
+	font: normal 16px arial;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body {
+	margin: 4px;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
+header {
+	background-color: #ff937d;
+	padding: 4px 0;
 }
 
-/* Carousel */
-.carousel-caption {
-    z-index: 10 !important;
+main {
+	background-color: #bae4b7;
+	padding: 4px 0;
 }
 
-    .carousel-caption p {
-        font-size: 20px;
-        line-height: 1.4;
-    }
+footer {
+	background-color: #ffdd85;
+	padding: 4px 0;
+}
+/*#endregion*/
 
-@media (min-width: 768px) {
-    .carousel-caption {
-        z-index: 10 !important;
-    }
+/*#region Text Elements*/
+h1 {
+	font-size: 2em;
+	font-weight:900;
+}
+
+h2 {
+	font-size: 1.833em;
+	font-weight:800;
+}
+
+h3 {
+	font-size: 1.667em;
+	font-weight:700;
+}
+
+h4 {
+	font-size: 1.5em;
+	font-weight:600;
+}
+
+h5 {
+	font-size: 1.333em;
+	font-weight:500;
+}
+
+h6 {
+	font-size: 1.167em;
+	font-weight:400;
+}
+
+a {
+	cursor: pointer;
+	color:black;
+	text-decoration: none;
+}
+
+p{
+	font-size:1.12em;
+	text-align:justify;
+	text-indent:1em;
+	margin:0.2em 0;
+}
+/*#endregion*/
+
+/*#region Classes*/
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.row {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.outer-container {
+	border: 2px solid black;
+	border-radius: 12px;
+	padding: 0 8px;
+	margin: 4px auto;
+	max-width: 800px;
+}
+
+.inner-container {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.width-100pc {
+	width: 100%;
+}
+
+.width-7em {
+	width: 7em;
+}
+
+.height-3ex {
+	height: 3ex;
+}
+
+.fbasis-8em {
+	flex-basis: 8em;
+}
+
+.fbasis-16em {
+	flex-basis: 16em;
+}
+
+.fbasis-24em {
+	flex-basis: 24em;
+}
+
+.fbasis-32em {
+	flex-basis: 32em;
+}
+
+div.section {
+	margin: 4em 0 0 0;
+	border-top: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+	div.section > h1 {
+		font-size: 2em;
+		border: 1px solid black;
+		border-radius: 16px;
+		position: relative;
+		top: -0.5em;
+		background-color: white;
+	}
+/*#endregion*/
+
+#spacer{
+	height:2em;
 }

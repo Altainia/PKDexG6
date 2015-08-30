@@ -1,0 +1,91 @@
+﻿/*#region Display*/
+.frow {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.fcol {
+	display: flex;
+	flex-flow: column wrap
+}
+/*#endregion*/
+
+/*#region Alignment*/
+.falign-cross-start {
+	align-items: flex-start;
+}
+
+.falign-cross-center {
+	align-items: center;
+}
+
+.falign-cross-end {
+	align-items: flex-end;
+}
+
+.falign-cross-stretch {
+	align-items: stretch;
+}
+
+.falign-main-start {
+	justify-content: flex-start;
+}
+
+.falign-main-center {
+	justify-content: center;
+}
+
+.falign-main-end {
+	justify-content: flex-end;
+}
+
+.falign-main-pad {
+	justify-content: space-around;
+}
+
+.falign-main-spread {
+	justify-content: space-between;
+}
+
+.falign-self-start {
+	align-self: flex-start;
+}
+
+.falign-self-center {
+	align-self: center;
+}
+
+.falign-self-end {
+	align-self: flex-end;
+}
+
+.falign-self-stretch {
+	align-self: stretch;
+}
+/*#endregion*/
+
+/*#region Properties*/
+.fgrow-0 {
+	flex-grow: 0;
+}
+
+.fgrow-1 {
+	flex-grow: 1;
+}
+
+.fbasis-1pc{
+	flex-basis:1%;
+}
+
+.fnowrap {
+	flex-wrap: nowrap;
+}
+
+.fwrap {
+	flex-wrap: wrap;
+}
+
+.fwrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+/*#endregion*/

@@ -1,0 +1,50 @@
+﻿.iblurb {
+	border: none;
+	text-align: center;
+	border-collapse: separate;
+	border-radius: 16px;
+}
+
+table tr th.iblurb-hbreak {
+	background-color: transparent;
+	border-left: none;
+	border-right: none;
+}
+
+table.iblurb tr {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.iblurb th {
+	border: 1px solid black;
+	padding: 4px;
+	background-color: rgba(0, 0, 0, 0.30);
+	vertical-align: middle;
+	font-weight:700;
+}
+
+.iblurb tr:first-child th:first-child,
+.iblurb tr:first-child td:first-child {
+	border-top-left-radius: 16px;
+}
+
+.iblurb tr:first-child th:last-child,
+.iblurb tr:first-child td:last-child {
+	border-top-right-radius: 16px;
+}
+
+.iblurb tr:last-child td:first-child,
+.iblurb tr:last-child th:first-child {
+	border-bottom-left-radius: 16px;
+}
+
+.iblurb tr:last-child td:last-child,
+.iblurb tr:last-child th:last-child {
+	border-bottom-right-radius: 16px;
+}
+
+.iblurb td {
+	border: 1px solid black;
+	padding: 4px;
+	background-color: rgba(0, 0, 0, 0.10);
+}

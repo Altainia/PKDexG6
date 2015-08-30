@@ -1,0 +1,336 @@
+﻿.target-table {
+	border-radius: 10%;
+}
+
+	.target-table > div {
+		border-radius: 10%;
+	}
+
+		.target-table > div > div {
+			border-width: 1px;
+			border-style: solid;
+			border-radius: 100%;
+			width: 1em;
+			height: 1em;
+			display: flex;
+			flex-direction: row;
+			align-content: center;
+			justify-content: center;
+			font-weight: 900;
+			font-size: 16px;
+			margin: 4px;
+			font-family: 'Courier New';
+		}
+
+		.target-table > div > .cell-4 {
+			border-radius: 0;
+		}
+
+	/*#region Selected Adjacent*/
+	.target-table.selected-adjacent .cell-1,
+	.target-table.selected-adjacent .cell-2,
+	.target-table.selected-adjacent .cell-5 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+
+	.target-table.selected-adjacent .cell-4 {
+		border-color: green;
+		background-color: green;
+		box-shadow: green 0 0 16px;
+	}
+
+	.target-table.selected-adjacent .cell-3,
+	.target-table.selected-adjacent .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region All Adjacent Foes*/
+	.target-table.all-adjacent-foes .cell-1,
+	.target-table.all-adjacent-foes .cell-2 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+
+	.target-table.all-adjacent-foes .cell-4 {
+		border-color: green;
+		background-color: green;
+		box-shadow: green 0 0 16px;
+	}
+
+	.target-table.all-adjacent-foes .cell-3,
+	.target-table.all-adjacent-foes .cell-5,
+	.target-table.all-adjacent-foes .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.all-adjacent-foes .cell-1:before,
+	.target-table.all-adjacent-foes .cell-2:before {
+		content: "+";
+	}
+	/*#endregion*/
+
+	/*#region User*/
+	.target-table.user .cell-4 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+
+	.target-table.user .cell-1,
+	.target-table.user .cell-2,
+	.target-table.user .cell-3,
+	.target-table.user .cell-5,
+	.target-table.user .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region User or Adjacent Ally*/
+	.target-table.user-or-adjacent-ally .cell-4 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+
+	.target-table.user-or-adjacent-ally .cell-1,
+	.target-table.user-or-adjacent-ally .cell-2,
+	.target-table.user-or-adjacent-ally .cell-3,
+	.target-table.user-or-adjacent-ally .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.user-or-adjacent-ally .cell-5 {
+		border-color: green;
+		background-color: green;
+		box-shadow: green 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region Field*/
+	.target-table.field .cell-1,
+	.target-table.field .cell-2,
+	.target-table.field .cell-3,
+	.target-table.field .cell-4,
+	.target-table.field .cell-5,
+	.target-table.field .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.field {
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region User's Side*/
+	.target-table.users-side .cell-1,
+	.target-table.users-side .cell-2,
+	.target-table.users-side .cell-3,
+	.target-table.users-side .cell-4,
+	.target-table.users-side .cell-5,
+	.target-table.users-side .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.users-side .side-ally {
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region Entire Party*/
+	.target-table.entire-party > div {
+		display: none;
+	}
+
+	.target-table.entire-party:before {
+		content: "Roster";
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		justify-content: center;
+		padding: 5px;
+		border: 1px solid black;
+		border-radius: 10%;
+		margin: 5px;
+	}
+	/*#endregion*/
+
+	/*#region Adjacent Ally*/
+	.target-table.adjacent-ally .cell-1,
+	.target-table.adjacent-ally .cell-2,
+	.target-table.adjacent-ally .cell-3,
+	.target-table.adjacent-ally .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.adjacent-ally .cell-4 {
+		border-color: green;
+		background-color: green;
+		box-shadow: green 0 0 16px;
+	}
+
+	.target-table.adjacent-ally .cell-5 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region All Adjacent*/
+
+	.target-table.all-adjacent .cell-1,
+	.target-table.all-adjacent .cell-2,
+	.target-table.all-adjacent .cell-5 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+
+	.target-table.all-adjacent .cell-4 {
+		border-color: green;
+		background-color: green;
+		box-shadow: green 0 0 16px;
+	}
+
+	.target-table.all-adjacent .cell-3,
+	.target-table.all-adjacent .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.all-adjacent .cell-1:before,
+	.target-table.all-adjacent .cell-2:before,
+	.target-table.all-adjacent .cell-5:before {
+		content: "+";
+	}
+	/*#endregion*/
+
+	/*#region Entry Hazard*/
+	.target-table.entry-hazard .cell-1,
+	.target-table.entry-hazard .cell-2,
+	.target-table.entry-hazard .cell-3 {
+		border-color: black;
+		background-color: red;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.entry-hazard .cell-4,
+	.target-table.entry-hazard .cell-5,
+	.target-table.entry-hazard .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.entry-hazard .side-foe {
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region Selected Adjacent Foe*/
+	.target-table.selected-adjacent-foe .cell-1,
+	.target-table.selected-adjacent-foe .cell-2 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+
+	.target-table.selected-adjacent-foe .cell-4 {
+		border-color: green;
+		background-color: green;
+		box-shadow: green 0 0 16px;
+	}
+
+	.target-table.selected-adjacent-foe .cell-3,
+	.target-table.selected-adjacent-foe .cell-5,
+	.target-table.selected-adjacent-foe .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region Foe's Side*/
+	.target-table.foes-side .cell-1,
+	.target-table.foes-side .cell-2,
+	.target-table.foes-side .cell-3,
+	.target-table.foes-side .cell-4,
+	.target-table.foes-side .cell-5,
+	.target-table.foes-side .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.foes-side .side-foe {
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region Select Any But User*/
+	.target-table.select-any-but-user .cell-1,
+	.target-table.select-any-but-user .cell-2,
+	.target-table.select-any-but-user .cell-3,
+	.target-table.select-any-but-user .cell-5,
+	.target-table.select-any-but-user .cell-6 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+
+	.target-table.select-any-but-user .cell-4 {
+		border-color: green;
+		background-color: green;
+		box-shadow: green 0 0 16px;
+	}
+	/*#endregion*/
+
+	/*#region Random Adjacent Foe*/
+	.target-table.random-adjacent-foe .cell-1,
+	.target-table.random-adjacent-foe .cell-2 {
+		border-color: red;
+		background-color: red;
+		box-shadow: red 0 0 16px;
+	}
+
+	.target-table.random-adjacent-foe .cell-4 {
+		border-color: green;
+		background-color: green;
+		box-shadow: green 0 0 16px;
+	}
+
+	.target-table.random-adjacent-foe .cell-3,
+	.target-table.random-adjacent-foe .cell-5,
+	.target-table.random-adjacent-foe .cell-6 {
+		border-color: black;
+		background-color: black;
+		box-shadow: black 0 0 16px;
+	}
+
+	.target-table.random-adjacent-foe .cell-1:before,
+	.target-table.random-adjacent-foe .cell-2:before {
+		content: "?";
+	}
+/*#endregion*/

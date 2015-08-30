@@ -1,0 +1,61 @@
+﻿.btn {
+	padding: 4px;
+	border-radius: 1em;
+	border: 2px solid;
+	font-weight:bold;
+}
+
+	.btn:focus {
+		outline: none;
+		box-shadow: #007e7e 0px 0px 10px inset;
+	}
+
+	.btn-red {
+	background-color: rgba(255, 0, 0, 0.5);
+}
+
+	.btn-red:hover {
+		background-color: rgba(255, 0, 0, .75);
+	}
+
+.btn-blue {
+	background-color: rgba(0, 0, 255, 0.5);
+}
+
+	.btn-blue:hover {
+		background-color: rgba(0, 0, 255, 0.75);
+	}
+
+.btn-yellow {
+	background-color: rgba(255, 255, 0, 0.5);
+}
+
+	.btn-yellow:hover {
+		background-color: rgba(255, 255, 0, 0.75);
+	}
+
+.btn-green {
+	background-color: rgba(0, 255, 0, 0.5);
+}
+
+	.btn-green:hover {
+		background-color: rgba(0, 255, 0, 0.75);
+	}
+
+.btn-white {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+	.btn-white:hover {
+		background-color: rgba(255, 255, 255, .75);
+	}
+
+.btn-black {
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+}
+
+	.btn-black:hover {
+		background-color: rgba(0, 0, 0, .75);
+		color: white;
+	}
